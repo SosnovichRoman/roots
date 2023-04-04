@@ -1,4 +1,14 @@
 @use "sass:math";
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1460;
+// x2
+$containerPadding: 15;
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding + $containerPadding;
 
 //Подключение шрифта
 @mixin font($font_name, $file_name, $weight, $style) {
