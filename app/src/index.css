@@ -91,18 +91,3 @@ h6 {
 }
 
 /* ======================================================== */
-
-[class*=__container] {
-  max-width: 111.875rem;
-  margin: 0 auto;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
-}
-
-body{
-  font-family: 'Montserrat';
-}
-
-main{
-  /* margin-top: 5rem; */
-}

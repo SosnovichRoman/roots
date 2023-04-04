@@ -1,0 +1,24 @@
+@use "sass:math";
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1170;
+
+$containerPadding: 15;
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+@import './templates/mixins';
+
+[class*=__container] {
+    max-width: $containerWidth;
+    margin: 0 auto;
+    padding-right: $containerPadding;
+    padding-left: $containerPadding;
+}
+
+body {
+    font-family: 'Montserrat';
+}
