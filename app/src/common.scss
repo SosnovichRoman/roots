@@ -12,13 +12,15 @@ $containerWidth: $maxWidthContainer + $containerPadding + $containerPadding;
 
 @import './templates/mixins';
 
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
+
 [class*=__container] {
-    max-width: $containerWidth;
+    max-width: $containerWidth + px;
     margin: 0 auto;
-    padding-right: $containerPadding;
-    padding-left: $containerPadding;
+    padding-right: $containerPadding + px;;
+    padding-left: $containerPadding + px;;
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Comfortaa';
 }
