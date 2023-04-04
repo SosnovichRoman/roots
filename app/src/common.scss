@@ -17,8 +17,8 @@ $containerWidth: $maxWidthContainer + $containerPadding + $containerPadding;
 [class*=__container] {
     max-width: $containerWidth + px;
     margin: 0 auto;
-    padding-right: $containerPadding + px;;
-    padding-left: $containerPadding + px;;
+    padding-right: $containerPadding + px;
+    padding-left: $containerPadding + px;
 }
 
 body {
