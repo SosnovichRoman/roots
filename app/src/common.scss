@@ -4,11 +4,11 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1170;
-
+$maxWidthContainer: 1460;
+// x2
 $containerPadding: 15;
 // Ширина срабатывания первого брейкпоинта
-$containerWidth: $maxWidthContainer + $containerPadding;
+$containerWidth: $maxWidthContainer + $containerPadding + $containerPadding;
 
 @import './templates/mixins';
 
