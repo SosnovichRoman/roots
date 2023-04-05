@@ -11,7 +11,9 @@ export default {
         'ease': 'ease',
       },
       colors: {
-        'main-color': '#00B1FD', 
+        'accent-1': '#F8F5FF',
+        'neutral-main': '#FFFBF8',
+        'main': '#042D1E', 
         'background-color': '#F8F8F8',
       }
     },
