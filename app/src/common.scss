@@ -28,6 +28,15 @@ body {
     font-family: 'Comfortaa';
 }
 
+.heading-1 {
+    //styleName: Заголовок 1;
+    // font-family: Rounded Mplus 1c;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
 .button {
     padding: 25px 50px;
     font-family: Comfortaa;
@@ -41,7 +50,13 @@ body {
     border-radius: 5px;
     transition: color 0.3s ease;
 
-    &:hover{
+    &-dark{
+        color: $main;
+        background-color: transparent;
+        border-color: $main;
+    }
+
+    &:hover {
         background-color: $mainNeutral;
         color: $main;
     }
