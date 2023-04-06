@@ -29,3 +29,30 @@
     }
 
 }
+
+.catalog{
+    &__grid{
+        
+    }
+    &__item{
+        // &:nth-child(8n + 4){
+        //     & img{
+        //         height: 400px;
+        //     }
+        //     &:after{
+        //         content: '';
+        //         position: absolute;
+        //         bottom: 0;
+        //         height: 2px;
+        //         left: 0;
+        //         right: calc(100% + 30px);
+        //         background-color: #042D1E;
+        //     }
+        // }
+        // &:nth-child(8n + 5){
+        //     & img{
+        //         height: 400px;
+        //     } 
+        // }
+    }
+}

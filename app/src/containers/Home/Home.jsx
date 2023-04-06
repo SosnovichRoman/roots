@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
-import { hero } from '../../assets'
+import { catalog01, hero } from '../../assets'
 import './home.scss'
 import { initSliders } from '../../templates/sliders'
 import { popular01 } from '../../assets'
+import { Icon } from '@iconify/react'
 //import 'swiper/scss/pagination'
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
 			</section>
 			<section className='popular'>
 				<div className='popular__container'>
-					<h1 className='heading-1 border-solid border-b-2 border-main-3 border-spacing-y-[0.28em]'>Популярные товары</h1>
+					<h1 className='heading-1 text-main border-solid border-b-2 border-main-3'>Популярные товары</h1>
 					<div className='mt-20 grid grid-cols-[2fr_3fr] gap-[75px]'>
 						<div className='flex flex-col justify-between gap-5'>
 							<p className='text-[21px] leading-[1.17]'>
@@ -76,7 +77,7 @@ const Home = () => {
 										</div>
 									</div>
 
-									
+
 
 								</div>
 								{/* <button type="button" className="swiper-button-prev">{"<"}</button>
@@ -87,6 +88,81 @@ const Home = () => {
 
 
 
+					</div>
+				</div>
+			</section>
+			<section>
+				<div className='catalog__container'>
+					<div className=' flex items-baseline justify-between border-solid border-b-2 border-main-3'>
+						<h2 className='heading-1 text-main'>Каталог</h2>
+						<label className='flex gap-3'>
+							<input type='text' className='text-[26px] leading-[1.25]' />
+							<Icon icon='material-symbols:search' className=' text-[40px]' />
+						</label>
+					</div>
+					<div className='grid grid-cols-4 catalog__grid py-10 gap-x-[30px] gap-y-[60px]'>
+						<div className='catalog__item'>
+							<img src={catalog01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='catalog__item'>
+							<img src={catalog01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='catalog__item'>
+							<img src={catalog01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='catalog__item row-span-2'>
+							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='bg-main col-span-3'>
+
+						</div>
+						<div className='catalog__item row-span-2'>
+							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='catalog__item row-span-2'>
+							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='catalog__item row-span-2'>
+							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='catalog__item row-span-2'>
+							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className='bg-main col-span-3'>
+
+						</div>
 					</div>
 				</div>
 			</section>
