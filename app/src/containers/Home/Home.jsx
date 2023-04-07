@@ -4,6 +4,8 @@ import './home.scss'
 import { initSliders } from '../../templates/sliders'
 import { popular01 } from '../../assets'
 import { Icon } from '@iconify/react'
+import CatalogLayout from '../../components/CatalogLayout/CatalogLayout'
+import { catalog } from '../../constants'
 //import 'swiper/scss/pagination'
 
 const Home = () => {
@@ -100,70 +102,122 @@ const Home = () => {
 							<Icon icon='material-symbols:search' className=' text-[40px]' />
 						</label>
 					</div>
-					<div className='grid grid-cols-4 catalog__grid py-10 gap-x-[30px] gap-y-[60px]'>
-						<div className='catalog__item'>
-							<img src={catalog01} className='rounded-[5px] h-[350px] w-full object-cover' />
+					<CatalogLayout products={catalog} />
+					{/* <div className='grid grid-cols-4 gap-8 relative left-0 right-0'>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='catalog__item'>
-							<img src={catalog01} className='rounded-[5px] h-[350px] w-full object-cover' />
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='catalog__item'>
-							<img src={catalog01} className='rounded-[5px] h-[350px] w-full object-cover' />
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='catalog__item row-span-2'>
-							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+						<div className=" row-span-2">
+							<img src={popular01} className='rounded-[5px] h-[400px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='bg-main col-span-3'>
+						<div className='bg-main col-span-3 h-2 test'>
 
 						</div>
-						<div className='catalog__item row-span-2'>
-							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+						<div className="row-span-2">
+							<img src={popular01} className='rounded-[5px] h-[400px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='catalog__item row-span-2'>
-							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='catalog__item row-span-2'>
-							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='catalog__item row-span-2'>
-							<img src={catalog01} className='rounded-[5px] h-[400px] w-full object-cover' />
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
 							<div className='mt-[10px] flex justify-between'>
 								<p>Алоэ  Вера</p>
 								<p>20.00р</p>
 							</div>
 						</div>
-						<div className='bg-main col-span-3'>
+
+						<div className='bg-main col-span-3 h-2 test'>
 
 						</div>
-					</div>
+
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+						<div className="">
+							<img src={popular01} className='rounded-[5px] h-[350px] w-full object-cover' />
+							<div className='mt-[10px] flex justify-between'>
+								<p>Алоэ  Вера</p>
+								<p>20.00р</p>
+							</div>
+						</div>
+					</div> */}
 				</div>
 			</section>
 		</main>

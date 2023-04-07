@@ -30,29 +30,12 @@
 
 }
 
-.catalog{
-    &__grid{
-        
-    }
-    &__item{
-        // &:nth-child(8n + 4){
-        //     & img{
-        //         height: 400px;
-        //     }
-        //     &:after{
-        //         content: '';
-        //         position: absolute;
-        //         bottom: 0;
-        //         height: 2px;
-        //         left: 0;
-        //         right: calc(100% + 30px);
-        //         background-color: #042D1E;
-        //     }
-        // }
-        // &:nth-child(8n + 5){
-        //     & img{
-        //         height: 400px;
-        //     } 
-        // }
-    }
-}
+// .test{
+//     grid-column-start: 2;
+//     grid-column-end: 3;
+//     grid-row-start: 1;
+//     grid-row-end: 2;
+//     position: absolute;
+//     top: 40px;
+//     left: 40px;
+// }
